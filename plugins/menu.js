@@ -8,7 +8,7 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-*┌─〔 %me 〕──➤*
+*┌─〔 NdaaBotz 〕──➤*
 *│*⦁ Hai, %name!
 *│*⦁ Tersisa *%limit Limit*
 *│*⦁ Role *%role*
@@ -28,7 +28,7 @@ const defaultMenu = {
   body: '*│▸* %cmd %islimit %isPremium',
   footer: '*└────➤*\n',
   after: `
-*%npmname@^%version*
+*NdaaBotz@^%version*
 ${'```%npmdesc```'}
 `,
 }
@@ -218,7 +218,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `© *R-Txzy*`.trim(),
+                        "description": `© *NdaaBotz*`.trim(),
                         "footerText": "Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
                         "buttonText": "*Click Here*",
                         "listType": "SINGLE_SELECT",
@@ -364,7 +364,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                             }, {
                                 "rows": [{
                                     "title": "Owner bot",
-                                    "description": "pemilik R-Txzy",
+                                    "description": "pemilik NdaaBotz",
                                     "rowId": ".owner"
                                 }, {
                                     "title": "Donasi",
